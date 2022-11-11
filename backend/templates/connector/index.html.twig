@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Challenge - Analyse flight data{% endblock %}
+
+{% block body %}
+    <h3>Analyse flight data</h3>
+    {{form(form)}}
+    {% if dataAirport is not empty  %}
+        <div class="request">
+            <h3>Arrival info</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>'Departure airport'</td>
+                        <td>'Callsign'</td>
+                        <td>'Departure airport Horizontal distance'</td>
+                        <td>'Departure airport Vertical distance'</td>
+                    <tr>
+                </thead>
+                <tboby>    
+                    {% for item in dataAirport %}
+                        {{ item.estDepartureAirport }}
+                        {{ item.callsign }}
+                        {{ item.estDepartureAirportHorizDistance }}
+                        {{ item.estDepartureAirportVertDistance }}
+                    {% endfor %}
+                </tboby> 
+            </table>
+        </div>
+    {% else %}
+        <div class="alert alert-danger" role="alert">
+            Error el conectar con el sistema externo
+        </div> 
+    {% endif %}
+
+{% endblock %}

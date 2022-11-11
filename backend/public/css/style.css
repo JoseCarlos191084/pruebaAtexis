@@ -1,0 +1,55 @@
+body{
+   
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#connector{
+    width: 75%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid navy;
+    background: aliceblue;
+}
+#connector_airport{
+    display: inline-block;
+}
+#connector div{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+
+}
+#connector_begin, #connector_end{
+    width: auto!important;
+}
+#connector label{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+#connector_submit{
+    background: #00a698;
+    color: #FFF;
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 7px;
+    border: 0px;
+}
+#connector_submit:hover{
+    background:#00887d;
+}
+.alert{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+table{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
